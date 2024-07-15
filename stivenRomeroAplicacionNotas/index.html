@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Notas</title>
+    <link rel="stylesheet" href="/stivenRomeroAplicacionNotas/main.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Blog de Notas</h1>
+        <input type="text" id="buscar" placeholder="Buscar notas...">
+        <div>
+            <input type="checkbox" id="mostrarIncompletas">
+            <label for="mostrarIncompletas">Tareas aún no hechas</label>
+        </div>
+        <div class="entrada-nota">
+            <input type="text" id="titulo" placeholder="Título de la nota">
+            <textarea id="contenido" placeholder="Contenido de la nota"></textarea>
+            <button id="agregarNota">Agregar Nota</button>
+        </div>
+        <div id="contenedorNotas"></div>
+    </div>
+    <script src="/stivenRomeroAplicacionNotas/main.js"></script>
+</body>
+</html>

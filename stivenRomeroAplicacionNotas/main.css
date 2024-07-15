@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3e5fc; /* Azul clarito */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 450px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.entrada-nota {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contenedorNotas {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.nota {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.nota.completada {
+    text-decoration: line-through;
+    background-color: #d1ffd1;
+}
+
+.nota button {
+    align-self: flex-end;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.nota button:hover {
+    background-color: darkred;
+}
+
+.nota input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+#agregarNota {
+    background-color: green; /* Botón verde */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#agregarNota:hover {
+    background-color: darkgreen;
+}
+
+textarea#contenido {
+    min-height: 100px;
+}
